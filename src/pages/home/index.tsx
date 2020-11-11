@@ -1,4 +1,6 @@
 import React, {FC} from 'react';
+import styles from './index.module.scss';
+import ToolBar from '@/components/ToolBar';
 
 interface HomeProps {
 
@@ -7,7 +9,9 @@ interface HomeProps {
 const Home: FC<HomeProps> = (props) => {
     const {} = props;
     return (
-        <div>Home</div>
+        <div>
+            <ToolBar />
+        </div>
     )
 }
 

@@ -1,0 +1,36 @@
+.home {
+    padding: 20px;
+    .header {
+        display: flex;
+        justify-content: space-between;
+        .logo {
+            width: 48px;
+            height: 48px;
+        }
+    }
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 80px;
+        transform: translateY(-50%);
+    }
+    .autograph {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+    }
+    .copyright {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        text-align: right;
+        img {
+            width: 25px;
+            margin-bottom: 50px;
+        }
+        p {
+            font-size: 10px;
+            color: #f6f6f6;
+        }
+    }
+}

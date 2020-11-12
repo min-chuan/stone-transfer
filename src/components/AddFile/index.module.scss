@@ -1,0 +1,190 @@
+.addfile {
+    width: 344px;
+    height: 80px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.5);
+    overflow: hidden;
+    cursor: pointer;
+    .inner {
+        position: relative;
+        display: flex;
+        line-height: 60px;
+        .button {
+            position: relative;
+            display: flex;
+            z-index: 100;
+            background-color: #fff;
+            .plus {
+                position: relative;
+                top: -3px;
+                margin-left: 30px;
+                font-size: 40px;
+                font-weight: bold;
+            }
+            .text {
+                text-align: center;
+                margin-left: 22px;
+                font-size :23px;
+                font-weight: bold;
+                white-space: nowrap;
+                .subtext {
+                    line-height: normal;
+                    position: absolute;
+                    top: 31px;
+                    left: 74px;
+                    font-size: 14px;
+                    border-bottom: 2px solid #f8da77;
+                    opacity: 0;
+                    &:hover {
+                        opacity: 0.5 !important;
+                    }
+                }
+            }
+        }
+        .receive {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 108px;
+            height: 60px;
+            line-height: 60px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+    }
+}
+
+:global(.addfile-left-enter) {
+    transform: translateX(0);
+    .button {
+        width: 177px;
+        .maintext {
+            position: relative;
+            transform: translateY(0);
+        }
+        .subtext {
+            opacity: 0 !important;
+        }
+    }
+}
+:global(.addfile-left-enter-active) {
+    transform: translateX(-20px);
+    transition: all .5s;
+    .button {
+        width: 100%;
+        transition: all .25s;
+        .maintext {
+            position: relative;
+            transform: translateY(-10px);
+            transition: all .25s;
+        }
+        .subtext {
+            opacity: 1 !important;
+            transition: all .25s;
+        }
+    }
+}
+:global(.addfile-left-enter-done) {
+    transform: translateX(-20px);
+    .button {
+        width: 100%;
+        .maintext {
+            position: relative;
+            transform: translateY(-10px);
+        }
+        .subtext {
+            opacity: 1 !important;
+        }
+    }
+}
+:global(.addfile-left-exit) {
+    transform: translateX(-20px);
+    .button {
+        width: 100%;
+        .maintext {
+            position: relative;
+            transform: translateY(-10px);
+        }
+        .subtext {
+            opacity: 1 !important;
+        }
+    }
+}
+:global(.addfile-left-exit-active) {
+    transform: translateX(0);
+    transition: all .5s;
+    .button {
+        width: 177px;
+        transition: all .25s;
+        .maintext {
+            position: relative;
+            transform: translateY(0);
+            transition: all .25s;
+        }
+        .subtext {
+            opacity: 0 !important;
+            transition: all .25s;
+        }
+    }
+}
+// :global(.addfile-left-exit-done) {
+//     transform: translateX(0);
+//     .button {
+//         width: 177px;
+//         .maintext {
+//             position: relative;
+//             transform: translateY(0);
+//         }
+//         .subtext {
+//             opacity: 0;
+//         }
+//     }
+// }
+
+:global(.addfile-right-enter){
+    transform: translateX(0);
+    .receive {
+        background-color: #f1f1f1 !important;
+    }
+}
+:global(.addfile-right-enter-active){
+    transform: translateX(20px);
+    transition: all .5s;
+    .receive {
+        background-color: #f8da77 !important;
+        transition: all .5s;
+    }
+}
+:global(.addfile-right-enter-done){
+    transform: translateX(20px);
+    .receive {
+        background-color: #f8da77 !important;
+    }
+}
+:global(.addfile-right-exit){
+    transform: translateX(20px);
+    .receive {
+        background-color: #f8da77 !important;
+    }
+}
+:global(.addfile-right-exit-active){
+    transform: translateX(0);
+    transition: all .5s;
+    .receive {
+        background-color: #f1f1f1 !important;
+        transition: all .5s;
+    }
+}
+// :global(.addfile-right-exit-done){
+//     transform: translateX(0);
+//     .receive {
+//         background-color: #f1f1f1 !important;
+//     }
+// }
+

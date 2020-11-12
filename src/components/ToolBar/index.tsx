@@ -10,13 +10,13 @@ const ToolBar: FC<ToolBarProps> = (props) => {
     const {className} = props;
     return (
         <div className={styles.toolbar}>
-            <div className={styles.message}>我们两岁啦！感恩有你！</div>
+            <div className={styles.tip}>我们两岁啦！感恩有你！</div>
             <ul className={styles.navlist}>
                 <li className={styles.language}>中文/<span>EN</span></li>
-                <li>更多<img src={down}/></li>
-                <li>升级会员<span className={styles.dot}></span></li>
+                <li className={styles.more}>更多<img src={down}/></li>
+                <li className={styles.vip}>升级会员<span className={styles.dot}></span></li>
                 <li>我的云盘</li>
-                <li><img src={message}/></li>
+                <li className={styles.message}><img src={message}/></li>
             </ul>
             <div className={styles.logo}>
                 <img src={logo28}/>

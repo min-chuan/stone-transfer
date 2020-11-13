@@ -1,0 +1,12 @@
+.basic_layout {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    .toolbar_wrapper {
+        position: absolute;
+        z-index: 100;
+        top: 20px;
+        right: 20px;
+    }
+}

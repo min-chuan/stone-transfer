@@ -1,4 +1,4 @@
-import React, {FC, useState} from 'react';
+import React, {FC} from 'react';
 import styles from './index.module.scss';
 import { down, message, logo28} from '@/config/img-url';
 
@@ -6,13 +6,13 @@ interface ToolBarProps {
     className?: string;
     isOpen: boolean;
     setIsOpen: Function;
+    isLogin: boolean;
 }
 
 const ToolBar: FC<ToolBarProps> = (props) => {
-    const {className, isOpen, setIsOpen} = props;
-    const [isLogin, setLogin] = useState(true);
+    const {className, isOpen, setIsOpen, isLogin} = props;
     return (
-        <div className={styles.toolbar}>
+        <div className={`${styles.toolbar} ${className || ''}`}>
             <div className={styles.tip}>我们两岁啦！感恩有你！</div>
             <ul className={styles.navlist}>
                 <li className={styles.language}>中文/<span>EN</span></li>

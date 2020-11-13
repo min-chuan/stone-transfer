@@ -5,15 +5,9 @@
     padding: 20px;
     box-sizing: border-box;
     overflow: hidden;
-    .header {
-        position: relative;
-        z-index: 100;
-        display: flex;
-        justify-content: space-between;
-        .logo {
-            width: 48px;
-            height: 48px;
-        }
+    .logo {
+        width: 48px;
+        height: 48px;
     }
     .center {
         position: absolute;

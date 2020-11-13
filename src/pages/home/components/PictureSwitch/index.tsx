@@ -24,7 +24,6 @@ const PictureSwitch: FC<PictureSwitchProps> = (props) => {
             if(currentActive === imgs.length){
                 currentActive = 0;
             }
-            console.log('current', currentActive);
             setActive(() => currentActive);
             activeRef.current = currentActive;
         }, 3000);

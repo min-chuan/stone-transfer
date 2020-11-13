@@ -1,12 +1,10 @@
 import React, {FC, useState} from 'react';
 import styles from './index.module.scss';
-import ToolBar from '@/components/ToolBar';
 import AddFile from '@/components/AddFile';
 import PictureSwitch from './components/PictureSwitch';
 import {logo48} from '@/config/img-url';
 import autograph from '@/images/autograph.png';
 import question from '@/images/question.png';
-import LoginDrawer from './components/LoginDrawer';
 
 interface HomeProps {
 
@@ -14,13 +12,9 @@ interface HomeProps {
 
 const Home: FC<HomeProps> = (props) => {
     const {} = props;
-    const [isOpen, setIsOpen] = useState(false);
     return (
         <div className={styles.home}>
-            <div className={styles.header}>
-                <img className={styles.logo} src={logo48} alt="logo"/>
-                <ToolBar isOpen={isOpen} setIsOpen={setIsOpen}/>
-            </div>
+            <img className={styles.logo} src={logo48} alt="logo"/>
             <div className={styles.center}>
                 <AddFile/>
             </div>
@@ -32,7 +26,6 @@ const Home: FC<HomeProps> = (props) => {
                 </p>
             </div>
             <PictureSwitch />
-            <LoginDrawer isOpen={isOpen}/>
         </div>
     )
 }

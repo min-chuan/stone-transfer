@@ -48,7 +48,6 @@ const LoginDrawer: FC<LoginDrawerProps> = (props) => {
                 </div>
             </div>
         </CSSTransition>
-
     )
 }
 

@@ -1,0 +1,35 @@
+.abstract {
+    width: 100%;
+    font-size: 12px;
+    .copacity {
+        p {
+            margin-bottom: 5px;
+        }
+        .expand {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    .setting {
+        display: flex;
+        align-items: center;
+        padding: 8px 5px;
+        margin-top: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover {
+            background-color: #fff;
+        }
+        img {
+            width: 22px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        .tip {
+            p {
+                margin: 5px 0;
+            }
+        }
+    }
+}

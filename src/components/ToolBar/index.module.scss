@@ -1,14 +1,13 @@
 .toolbar {
-    display: inline-block;
+    display: flex;
     height: 38px;
     padding-right: 10px;
-    overflow: hidden;
     line-height: 38px;
     border-radius: 5px;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
     background-color: #fff;
+    overflow: hidden;
     .tip {
-        float: left;
         padding: 0 12px;
         background-color: #f8da77;
         font-size: 14px;
@@ -19,11 +18,10 @@
         }
     }
     .navlist {
-        float: left;
         display: flex;
         li {
             position: relative;
-            margin: 0 6px;
+            padding: 0 6px;
             font-size: 14px;
             font-weight: bold;
             cursor: pointer;
@@ -37,11 +35,8 @@
                 position: absolute;
                 right: -5px;
                 top: 10px;
+                z-index: 100;
                 border-radius: 50%;
-            }
-            .close {
-                font-size: 10px;
-                margin: 0 10px;
             }
         }
         .language {
@@ -74,15 +69,21 @@
                 margin: 10px 1px 2px 3px;
             }
         }
-    }
-    .logo {
-        float: left;
-        cursor: pointer;
-        img {
-            border-radius: 50%;
-            height: 28px;
-            width: 28px;
-            padding: 5px;
+        .logo {
+            cursor: pointer;
+            img {
+                border-radius: 50%;
+                height: 28px;
+                width: 28px;
+                padding: 5px;
+            }
+        }
+        .close {
+            i {
+                font-size: 10px;
+                margin: 0 10px;
+            }
         }
     }
+    
 }

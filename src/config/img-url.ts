@@ -20,3 +20,5 @@ export const history = 'https://background.cowtransfer.com/version/1605059482750
 export const gift = 'https://background.cowtransfer.com/version/1605059482750/image/gift.b62d193.png'
 // 设置
 export const setting = 'https://background.cowtransfer.com/version/1605059482750/image/Settings.842d7fd.png'
+// 锁
+export const lock = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAABN0lEQVQokY1RMU7DQBCcs506lEih4wPED4BXIFBckD5G/kGEyAsiqFMAipBS5geUGCkFaZFooLMERTp7B935bF8sglhptXu7szc7d4okKivWwwGABGQfukyuQEz9o7t5hakHivXwBmRsgdiK4K0fPlzqzDPg14sBhDGEAuEYwgPj5Bg0tbhII82OwFwvTOyNV37/foLGJkUa6fo1yATA3LMDfYim5wxtE5mZnsbUDGTHMmyKNNord691bGzsGNH5S3QG8rER2RLsREWeq/x58AWy+xvAAVb5dwCR7j+AVex6VpDrn0okVMJQ5+3+1oASgRIuvePFyjtZrCBcNn0pMfnTKVvUHyAP7fkNZM9dK1Dl+7sDPZD7Tr6lI7Af5hRN/r7r1bSGzN3xTyczDyKjZmiHl8wZhKMfA8lMzxUUN/kAAAAASUVORK5CYII='

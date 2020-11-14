@@ -1,0 +1,14 @@
+.button {
+    background: #fcd467;
+    width: 88px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #4d4d4d;
+    border-radius: 10px;
+    font-family: 'PingFang SC', Arial, "Microsoft YaHei UI", "Microsoft YaHei", serif;
+    cursor: pointer;
+    &:hover {
+        background-color: #fdd042;
+    }
+}

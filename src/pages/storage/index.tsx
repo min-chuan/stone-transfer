@@ -1,5 +1,8 @@
-import React, {FC} from 'react';
+import React, {FC, useState} from 'react';
 import styles from './index.module.scss';
+import SearchSelect from '../../components/SearchSelect'
+import PageConatiner from '@/components/PageContainer';
+
 
 interface StorageProps {
 
@@ -7,8 +10,11 @@ interface StorageProps {
 
 const Storage: FC<StorageProps> = (props) => {
     const {} = props;
+
     return (
-        <div>Storage</div>
+        <PageConatiner className={styles.storage}>
+            <SearchSelect />
+        </PageConatiner>
     )
 }
 

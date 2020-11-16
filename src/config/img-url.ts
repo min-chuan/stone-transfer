@@ -20,3 +20,19 @@ export const history = 'https://background.cowtransfer.com/version/1605059482750
 export const gift = 'https://background.cowtransfer.com/version/1605059482750/image/gift.b62d193.png'
 // 设置
 export const setting = 'https://background.cowtransfer.com/version/1605059482750/image/Settings.842d7fd.png'
+// 搜索图标
+export const search = 'https://background.cowtransfer.com/version/1605492366814/image/search.fa3fb14.png'
+// 图片
+export const img = 'https://background.cowtransfer.com/version/1605492366814/image/image.4ea5d15.png'
+// PDF文档
+export const pdf = 'https://background.cowtransfer.com/version/1605492366814/image/pdf.1d1f67e.png'
+// XLS文档
+export const xls = 'https://background.cowtransfer.com/version/1605492366814/image/excel.39245f8.png'
+// WORD文档
+export const word = 'https://background.cowtransfer.com/version/1605492366814/image/word.adb6030.png'
+// PPT文档
+export const ppt = 'https://background.cowtransfer.com/version/1605492366814/image/ppt.9ced633.png'
+// 视频
+export const video = 'https://background.cowtransfer.com/version/1605492366814/image/play.fe5c5c8.png'
+// 音频
+export const radio = 'https://background.cowtransfer.com/version/1605492366814/image/mp.2a846a4.png'

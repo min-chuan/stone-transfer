@@ -6,12 +6,10 @@ export const useClickOutside = (
         cb: (inside: boolean) => void
     ) => {
     const click_outside = (e: MouseEvent) => {
-        // console.log('点击了外面');
         cb(false);
     }
 
     const click_inside = (e: MouseEvent) => {
-        // console.log('点击了内部');
         cb(true);
         e.stopPropagation();
     }

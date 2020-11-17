@@ -56,17 +56,21 @@ const SearchSelect: FC<SearchSelectProps> = (props) => {
 
     return (
         <div className={styles.search}>
-            <SerachInput />
-            {/* <ul className={classnames(styles.search_list, {[styles.visible]: active})}>
+            <SerachInput 
+                onFocus={() => {setActive(true)}} 
+                onClickOutside={() => {setActive(false)}}
+                placeholder={value ? '类型：' + value : '搜索'}
+            />
+            <ul className={classnames(styles.search_list, {[styles.visible]: active})}>
                 {
                     data.map(item => (
-                        <li onClick={() => { console.log('hello');setValue(item.text)}}>
+                        <li onClick={() => { setValue(item.text)}}>
                             <img src={item.img}/>
                             <span>{item.text}</span>
                         </li>
                     ))
                 }
-            </ul> */}
+            </ul>
         </div>
     )
 }

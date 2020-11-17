@@ -1,0 +1,61 @@
+.table_header {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    height: 44px;
+    margin-top: 20px;
+    padding-right: 8px;
+    box-shadow: 0 8px 8px -8px rgba(0, 0, 0, 0.1);
+    .check_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 22px;
+        height: 22px;
+        line-height: 22px;
+        border: 2px solid #f3f3f3;
+        box-sizing: border-box;
+        border-radius: 4px;
+        margin: 0 8px;
+        cursor: pointer;
+        i {
+            display: none;
+            font-size: 16px;
+            color: #f8f8f8;
+            font-weight: bold;
+        }
+        &.active {
+            background: #1c344b;
+            border-color: #1c344b;
+            i {
+                display: inline;
+            }
+        }
+    }
+    
+    .item {
+        border-radius: 6px;
+        height: 100%;
+        line-height: 44px;
+        font-size: 14px;
+        padding-left: 8px;
+        color: #8e8e8e;
+        cursor: pointer;
+        img {
+            margin: 0 10px;
+        }
+        &:hover {
+            background-color: #f8f8f8;
+        }
+    }
+    .name {
+        width: 40%;
+    }
+    .time {
+        width: 30%;
+    }
+    .size {
+        width: 20%;
+    }
+}

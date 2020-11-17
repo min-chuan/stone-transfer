@@ -1,0 +1,122 @@
+.table_item {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    border-bottom: 1px solid #f8f8f8;
+    font-size: 13px;
+    font-weight: 500;
+    color: #727272;
+    &:hover {
+        background-color: #fcfcfc;
+        .img_wrapper {
+            display: block !important;
+        }
+    }
+    &.active {
+        background-color: #eaf1f8;
+    }
+    .check_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 22px;
+        height: 22px;
+        line-height: 22px;
+        border: 2px solid #f3f3f3;
+        box-sizing: border-box;
+        border-radius: 4px;
+        margin: 0 8px;
+        cursor: pointer;
+        i {
+            display: none;
+            font-size: 16px;
+            color: #f8f8f8;
+            font-weight: bold;
+        }
+        &.active {
+            background: #1c344b;
+            border-color: #1c344b;
+            i {
+                display: inline;
+            }
+        }
+    }
+    
+    .name {
+        display: flex;
+        align-items: center;
+        width: 40%;
+        padding-left: 8px;
+        img {
+            width: 21px;
+            height: 19px;
+            margin: 0 18px 0 10px;
+            object-fit: contain;
+        }
+    }
+    .time {
+        width: 30%;
+        padding-left: 8px;
+    }
+    .size { 
+        line-height: 44px;
+        width: 20%;
+        padding-left: 8px;
+        .img_wrapper {
+            display: none;
+            float: right;
+            width: 24px;
+            height: 44px;
+            object-fit: contain;
+            text-align: center;
+            cursor: pointer;
+            &:hover {
+                &>img {
+                    &:nth-of-type(1) {
+                        display: none;
+                    }
+                    &:nth-of-type(2) {
+                        display: inline-block;
+                    }
+                }
+            }
+            &>img {
+                vertical-align: middle;
+                &:nth-of-type(1) {
+                    display: inline-block;
+                }
+                &:nth-of-type(2) {
+                    display: none;
+                }
+            }
+        }
+        .more {
+            position: relative;
+            .menu {
+                position: absolute;
+                top: calc(100% + 8px);
+                background: #fff;
+                width: 160px;
+                right: 0;
+                border-radius: 6px;
+                margin-bottom: 64px;
+                box-shadow: 0 0 8px 0 rgba(136, 136, 136, 0.25);
+                li {
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+                    line-height: 32px;
+                    padding: .25em 1em;
+                    cursor: pointer;
+                    img {
+                        width: 16px;
+                        height: 16px;
+                        object-fit: contain;
+                        margin-right: 8px;
+                        opacity: .5;
+                    }
+                }
+            }
+        }
+    }
+}

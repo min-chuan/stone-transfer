@@ -6,11 +6,12 @@ import { useClickOutside } from '@/hooks';
 
 interface SearchInputProps {
     className?: string;
+    onClickOutside?: () => void;
     [propName: string]: any;
 }
 
 const SearchInput: FC<SearchInputProps> = (props) => {
-    const {className, onFocus, ...inputProps} = props;
+    const {className, onFocus, onClickOutside, ...inputProps} = props;
     const [active, setActive] = useState(false);
     const activeRef = useRef(false);
     const searchInputRef = useRef<HTMLDivElement | null>(null);
@@ -21,7 +22,6 @@ const SearchInput: FC<SearchInputProps> = (props) => {
     // 3. 点击SerachInput外边，取消input阴影，隐藏下拉框 // 如果clickOutside, 设置active=false
     
     const cb = (inside: boolean) => {
-        console.log('activeRef.current',  activeRef.current);
         
         if(inside){
             if(activeRef.current){
@@ -30,6 +30,7 @@ const SearchInput: FC<SearchInputProps> = (props) => {
         } else {
             activeRef.current = false;
             setActive(false);
+            onClickOutside && onClickOutside();
         }
     }
 
@@ -45,9 +46,6 @@ const SearchInput: FC<SearchInputProps> = (props) => {
                     activeRef.current = true;
                     setActive(true);
                     onFocus && onFocus(e);
-                }}
-                onBlur={() => {
-                    console.log('blur')
                 }}
             />
         </div>

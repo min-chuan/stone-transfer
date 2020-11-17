@@ -8,6 +8,7 @@ interface PageContainerProps {
 
 const PageContainer: FC<PageContainerProps> = (props) => {
     const { className, children } = props;
+
     return (
         <div className={classnames(styles.page_container, className)}>
             {children}

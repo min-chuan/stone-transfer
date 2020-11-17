@@ -1,0 +1,85 @@
+.account {
+    .container {
+        margin-top: 6%;
+        display: flex;
+        align-items: flex-start;
+        .message {
+            flex-basis: 50%;
+            li {
+                padding: 16px;
+                border-radius: 4px;
+                cursor: pointer;
+                &:hover {
+                    background-color: #eaf1f8;
+                }
+                .text {
+                    font-size: 18px;
+                    font-weight: bold;
+                    text-decoration: underline;
+                }
+                .subtext {
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #727272;
+                }
+            }
+            
+        }
+        .promessage {
+            flex-basis: 50%;
+            .block {
+                padding: 16px;
+                // margin-top: 30px;
+                color: #727272;
+                line-height: 24px;
+                .title {
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: #333;
+                    img {
+                        width: 12px;
+                        height: 16px;
+                        margin-right: 12px;
+                    }
+                }
+            }
+            .basis {
+                .content {
+                    display: flex;
+                    justify-content: space-between;
+                    .levelup {
+                        margin-right: 10px;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .domain {
+
+            }
+            .bg {
+                .pics {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                    li {
+                        position: relative;
+                        flex: 1 1 33%;
+                        height: 0;
+                        padding-bottom: 15%;
+                        margin-right: 5px;
+                        border-radius: 5px;
+                        background-color: rgba(16,16,16,0.5);
+                        img {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

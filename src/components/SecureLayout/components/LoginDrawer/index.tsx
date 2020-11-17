@@ -1,6 +1,7 @@
 import React, {FC, useState} from 'react';
 import {CSSTransition} from 'react-transition-group';
 import styles from './index.module.scss';
+import Button from '@/components/Button';
 import {
     register_reson,
     login_header,
@@ -43,7 +44,7 @@ const LoginDrawer: FC<LoginDrawerProps> = (props) => {
                                 <div className={styles.tip}>电子邮箱或手机</div>
                             </CSSTransition>
                         </div>
-                        <div className={styles.next}>下一步</div>
+                        <Button className={styles.next}>下一步</Button>
                     </div>
                 </div>
             </div>
